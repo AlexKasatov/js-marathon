@@ -1,0 +1,84 @@
+@import url(reset.css);
+
+body {
+  background-color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+.header {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.logo {
+  margin-left: 25px;
+  font-size: 36px;
+}
+  
+.nav {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+  gap: 40px  ;
+  margin-right: 25px;
+
+}
+
+.nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+}
+
+.page {
+  overflow: hidden;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.container {
+  width: 100%;
+  display: flex;
+  padding: 0 20px;
+}
+
+.slide {
+  height: 70vh;
+ 
+  margin: 1px;
+  padding: 10px;
+  cursor: pointer;
+  color: #fff;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  transition: all 1s ease-out;
+}
+
+.slide.slide_active {
+  flex: 10;
+  
+
+}
+
+.slide__heading {
+  color: #fff;
+  font-size: 54px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+
+.slide.slide_active h3 {
+  opacity: 1;
+  transition: opacity 0.8s ease-in 0.4s;
+}
