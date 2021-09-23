@@ -18,12 +18,13 @@ body {
   display: flex;
   width: 600px;
   justify-content: space-between;
+  text-align: center;
   margin-bottom: 1rem;
 }
 
 .col-header {
   width: 150px;
-  box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+  box-shadow: 4px 4px 9px rgba(148, 239, 255, 0.36);
   border-radius: 20px;
   padding: 0.8rem 1rem;
   color: #fff;
@@ -33,7 +34,7 @@ body {
   width: 150px;
   height: 66px;
   border: 1px solid #eee;
-  box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+  box-shadow: 4px 4px 9px rgba(255, 255, 255, 0.36);
   border-radius: 20px;
   background: #f7f6f7;
   padding: 0.8rem 1rem;
@@ -44,6 +45,9 @@ body {
 
 .item:active {
   cursor: grabbing;
+  color: black;
+  background-color: #8fd3f4;
+  box-shadow: none;
 }
 
 .placeholder {
@@ -64,7 +68,7 @@ body {
 }
 
 .hold {
-  border: 1px solid rgb(112, 241, 230);
+  border: 1px solid black;
   
 }
 
@@ -73,7 +77,8 @@ body {
 }
 
 .hovered {
-  border-radius: 10px;
-  border-top: 2px solid rgb(69, 181, 226);
-  opacity: 0.6;
+  border-top: 2px solid blueviolet;
+  opacity: .5;
+  border-radius: 33px;
+  
 }
